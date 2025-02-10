@@ -5,26 +5,18 @@ resources:
 patches:
 - path: deployment.yaml
 - path: service.yaml
-
 replicas:
 - name: vote
-  count: 2 
-
+  count: 2
 images:
 - name: danilogranadosg/vote
   newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
-
-
 namespace: instavote
-
 commonLabels:
- project: instavote
- env: staging
-
+  project: instavote
+  env: staging
 commonAnnotations:
- supported-by: "sre@example.com"
-
+  supported-by: "sre@example.com"
 configMapGenerator:
-  - name: vote-options
-    env: options.env
-
+- name: vote-options
+  env: options.env
