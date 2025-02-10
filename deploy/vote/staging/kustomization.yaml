@@ -11,7 +11,7 @@ replicas:
   count: 2 
 
 images:
-- name: schoolofdevops/vote
+- name: danilogranadosg/vote
   newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
 
 
