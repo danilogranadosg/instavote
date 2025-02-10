@@ -10,7 +10,7 @@ replicas:
   count: 2
 images:
 - name: danilogranadosg/vote
-  newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-01e69b17-1739151424 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
 commonLabels:
   project: instavote
